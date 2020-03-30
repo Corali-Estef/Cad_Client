@@ -1,12 +1,13 @@
-﻿using Veiculos.Models;
-using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration.Conventions;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace ClienteVeiculos.Contexto
+namespace cadastro_veiculos.Models.Contexto
 {
     public class DBContext : DbContext
     {
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
 
         public DbSet<Placa_veiculo> Placa_veiculo { get; set; }
 
